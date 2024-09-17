@@ -1,29 +1,21 @@
 package org.example;
 
 import java.util.List;
-import java.util.Objects;
 
 public class ServicioFiguras {
 
+    //Solo sumar al area total si:
+        // -El circulo es rojo || area = Math.PI * radio * radio;
+        // -El triangulo es azul || area = (base * altura) / 2;
+        // -El cuadrado es verde || area = lado * lado;
+    // - Si el cuadrado es azul, multiplicar su area por 2 || area = 2 * (lado * lado);
+
+
     public Double calcularArea(Figura figura) {
-        Double area;
-        switch (figura) {
-            case Circulo(Double radio, String color) when Objects.equals(color, "rojo") -> {
-                 area = Math.PI * radio * radio;
-            }
-            case Triangulo(Double base, Double altura, String color) when Objects.equals(color, "azul") -> {
-                 area = (base * altura) / 2;
-            }
-            case Cuadrado(Double lado, String color) when Objects.equals(color, "verde") -> {
-                 area = lado * lado;
-            }
-            case Cuadrado(Double lado, String color) when Objects.equals(color, "azul") -> {
-                area = 2 * (lado * lado);
-            }
-            default -> area = 0.0;
-        }
-        return area;
+       //TODO Codigo aca
+        return null;
     }
+
 
     public Double sumarAreas(List<Figura> figuras) {
         Double sumaTotal = 0.0;
